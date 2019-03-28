@@ -1,0 +1,107 @@
+Script started on Thursday 28 March 2019 11:36:42 AM IST
+]0;guest-0jwea3@cec-HCL-Desktop: ~[01;32mguest-0jwea3@cec-HCL-Desktop[00m:[01;34m~[00m$ ssftp cs17d32@192.168.0.30[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kssh cs17d32@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d32@192.168.0.30's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+278 packages can be updated.
+0 updates are security updates.
+
+Last login: Thu Mar 28 11:35:05 2019 from 192.168.0.225
+$ ls
+examples.desktop  tell	test  you.txt
+$ touch me.txt
+$ ls
+examples.desktop  me.txt  tell	test  you.txt
+$ cat me.txt
+$ ls
+examples.desktop  me.txt  tell	test  you.txt
+$ du
+4	./.cache
+4	./test
+4	./tell
+40	./.config/plank/dock1/launchers
+44	./.config/plank/dock1
+48	./.config/plank
+52	./.config
+96	.
+$ ls -l
+total 20
+-rw-r--r-- 1 cs17d32 cs17d 8980 Apr 20  2016 examples.desktop
+-rw-r--r-- 1 cs17d32 cs17d    0 Mar 28 11:39 me.txt
+drwxr-xr-x 2 cs17d32 cs17d 4096 Mar 28 10:30 tell
+drwxr-xr-x 2 cs17d32 cs17d 4096 Mar 28 10:15 test
+-rw-r--r-- 1 cs17d32 cs17d    0 Mar 28 11:30 you.txt
+$ ls
+examples.desktop  me.txt  tell	test  you.txt
+$ exit
+Connection to 192.168.0.30 closed.
+]0;guest-0jwea3@cec-HCL-Desktop: ~[01;32mguest-0jwea3@cec-HCL-Desktop[00m:[01;34m~[00m$ script sshscp[K[K[K_scptask.txt
+Script started, file is ssh_scptask.txt
+]0;guest-0jwea3@cec-HCL-Desktop: ~[01;32mguest-0jwea3@cec-HCL-Desktop[00m:[01;34m~[00m$ script ssh_scptask.[K_ceccs17d32.txt
+Script started, file is ssh_scptask_ceccs17d32.txt
+]0;guest-0jwea3@cec-HCL-Desktop: ~[01;32mguest-0jwea3@cec-HCL-Desktop[00m:[01;34m~[00m$ sftp cs17d32@192.168.0.30[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kssh cs17d32@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d32@192.168.0.30's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+278 packages can be updated.
+0 updates are security updates.
+
+Last login: Thu Mar 28 11:37:39 2019 from 192.168.0.225
+$ ls  
+examples.desktop  me.txt  tell	test  you.txt
+$ touch ok.text
+$ ls
+examples.desktop  me.txt  ok.text  tell  test  you.txt
+$ du
+4	./.cache
+4	./test
+4	./tell
+40	./.config/plank/dock1/launchers
+44	./.config/plank/dock1
+48	./.config/plank
+52	./.config
+96	.
+$ ls -l
+total 20
+-rw-r--r-- 1 cs17d32 cs17d 8980 Apr 20  2016 examples.desktop
+-rw-r--r-- 1 cs17d32 cs17d    0 Mar 28 11:39 me.txt
+-rw-r--r-- 1 cs17d32 cs17d    0 Mar 28 11:51 ok.text
+drwxr-xr-x 2 cs17d32 cs17d 4096 Mar 28 10:30 tell
+drwxr-xr-x 2 cs17d32 cs17d 4096 Mar 28 10:15 test
+-rw-r--r-- 1 cs17d32 cs17d    0 Mar 28 11:30 you.txt
+$ exit    scp ccs17d32@192.168.0.30                     cs17d32@192.168.0.30
+usage: scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
+           [-l limit] [-o ssh_option] [-P port] [-S program]
+           [[user@]host1:]file1 ... [[user@]host2:]file2
+$ ls
+examples.desktop  me.txt  ok.text  tell  test  you.txt
+$ du  ls -l
+total 20
+-rw-r--r-- 1 cs17d32 cs17d 8980 Apr 20  2016 examples.desktop
+-rw-r--r-- 1 cs17d32 cs17d    0 Mar 28 11:39 me.txt
+-rw-r--r-- 1 cs17d32 cs17d    0 Mar 28 11:51 ok.text
+drwxr-xr-x 2 cs17d32 cs17d 4096 Mar 28 10:30 tell
+drwxr-xr-x 2 cs17d32 cs17d 4096 Mar 28 10:15 test
+-rw-r--r-- 1 cs17d32 cs17d    0 Mar 28 11:30 you.txt
+$ ls -n
+total 20
+-rw-r--r-- 1 1036 1004 8980 Apr 20  2016 examples.desktop
+-rw-r--r-- 1 1036 1004    0 Mar 28 11:39 me.txt
+-rw-r--r-- 1 1036 1004    0 Mar 28 11:51 ok.text
+drwxr-xr-x 2 1036 1004 4096 Mar 28 10:30 tell
+drwxr-xr-x 2 1036 1004 4096 Mar 28 10:15 test
+-rw-r--r-- 1 103
