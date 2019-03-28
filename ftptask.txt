@@ -1,0 +1,77 @@
+Script started on Thursday 28 March 2019 10:21:06 AM IST
+]0;guest-0jwea3@cec-HCL-Desktop: ~[01;32mguest-0jwea3@cec-HCL-Desktop[00m:[01;34m~[00m$ sftp cs17d32@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d32@192.168.0.30's password: 
+Connected to 192.168.0.30.
+sftp> ls
+examples.desktop    test                
+sftp> pwd
+Remote working directory: /home/cs17d32
+sftp> mkdir tell
+sftp> ls
+examples.desktop    tell                test                
+sftp> get examples.desktop
+Fetching /home/cs17d32/examples.desktop to examples.desktop
+/home/cs17d32/examples.desktop                  0%    0     0.0KB/s   --:-- ETA/home/cs17d32/examples.desktop                100% 8980     8.8KB/s   00:00    
+sftp> put -r
+You must specify at least one path after a put command.
+sftp> put -r test
+stat test: No such file or directory
+sftp> put -rtell tell
+stat tell: No such file or directory
+sftp> put -r test
+put: Invalid flag -t
+sftp> get tell
+Fetching /home/cs17d32/tell/ to tell
+Cannot download non-regular file: /home/cs17d32/tell/
+sftp> cd ..
+sftp> ls
+ask       cec       cs17d00   cs17d01   cs17d02   cs17d03   cs17d04   cs17d05   
+cs17d06   cs17d07   cs17d08   cs17d09   cs17d10   cs17d11   cs17d12   cs17d13   
+cs17d14   cs17d15   cs17d16   cs17d17   cs17d18   cs17d19   cs17d20   cs17d21   
+cs17d22   cs17d23   cs17d24   cs17d25   cs17d26   cs17d27   cs17d28   cs17d29   
+cs17d30   cs17d31   cs17d32   cs17d33   cs17d34   cs17d35   cs17d36   cs17d37   
+cs17d38   cs17d39   cs17d40   cs17d41   cs17d42   cs17d43   cs17d44   cs17d45   
+cs17d46   cs17d47   cs17d48   cs17d49   cs17d50   cs17d51   cs17d52   cs17d53   
+cs17d54   cs17d55   cs17d56   cs17d57   cs17d58   cs17d59   cs17d60   cs17d61   
+cs17d62   hari      ieeecec   
+sftp> help
+Available commands:
+bye                                Quit sftp
+cd path                            Change remote directory to 'path'
+chgrp grp path                     Change group of file 'path' to 'grp'
+chmod mode path                    Change permissions of file 'path' to 'mode'
+chown own path                     Change owner of file 'path' to 'own'
+df [-hi] [path]                    Display statistics for current directory or
+                                   filesystem containing 'path'
+exit                               Quit sftp
+get [-afPpRr] remote [local]       Download file
+reget [-fPpRr] remote [local]      Resume download file
+reput [-fPpRr] [local] remote      Resume upload file
+help                               Display this help text
+lcd path                           Change local directory to 'path'
+lls [ls-options [path]]            Display local directory listing
+lmkdir path                        Create local directory
+ln [-s] oldpath newpath            Link remote file (-s for symlink)
+lpwd                               Print local working directory
+ls [-1afhlnrSt] [path]             Display remote directory listing
+lumask umask                       Set local umask to 'umask'
+mkdir path                         Create remote directory
+progress                           Toggle display of progress meter
+put [-afPpRr] local [remote]       Upload file
+pwd                                Display remote working directory
+quit                               Quit sftp
+rename oldpath newpath             Rename remote file
+rm path                            Delete remote file
+rmdir path                         Remove remote directory
+symlink oldpath newpath            Symlink remote file
+version                            Show SFTP version
+!command                           Execute 'command' in local shell
+!                                  Escape to local shell
+?                                  Synonym for help
+sftp> exit
+]0;guest-0jwea3@cec-HCL-Desktop: ~[01;32mguest-0jwea3@cec-HCL-Desktop[00m:[01;34m~[00m$ [K]0;guest-0jwea3@cec-HCL-Desktop: ~[01;32mguest-0jwea3@cec-HCL-Desktop[00m:[01;34m~[00m$ 
