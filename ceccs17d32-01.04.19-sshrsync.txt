@@ -1,0 +1,68 @@
+cec-lab1@ceclab1-Veriton-Series:~$ script ceccs17d32-01.04.19-sshrsync.txt
+Script started, file is ceccs17d32-01.04.19-sshrsync.txt
+cec-lab1@ceclab1-Veriton-Series:~$ ssh cs17d32@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d32@192.168.0.30's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+278 packages can be updated.
+0 updates are security updates.
+
+Last login: Thu Mar 28 11:50:49 2019 from 192.168.0.225
+$ ls
+examples.desktop  l.txt  me.txt  ok.text  tell	test  you.txt
+$ touch linta.txt
+$ ls
+examples.desktop  linta.txt  l.txt  me.txt  ok.text  tell  test  you.txt
+$ du
+4	./.cache
+4	./test
+4	./tell
+40	./.config/plank/dock1/launchers
+44	./.config/plank/dock1
+48	./.config/plank
+52	./.config
+96	.
+$ ls -l
+total 20
+-rw-r--r-- 1 cs17d32 cs17d 8980 Apr 20  2016 examples.desktop
+-rw-r--r-- 1 cs17d32 cs17d    0 Apr  1 09:28 linta.txt
+-rw-r--r-- 1 cs17d32 cs17d    0 Mar 28 11:57 l.txt
+-rw-r--r-- 1 cs17d32 cs17d    0 Mar 28 11:39 me.txt
+-rw-r--r-- 1 cs17d32 cs17d    0 Mar 28 11:51 ok.text
+drwxr-xr-x 2 cs17d32 cs17d 4096 Mar 28 10:30 tell
+drwxr-xr-x 2 cs17d32 cs17d 4096 Mar 28 10:15 test
+-rw-r--r-- 1 cs17d32 cs17d    0 Mar 28 11:30 you.txt
+$ scp cs17d32@192.168.0.30
+usage: scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
+           [-l limit] [-o ssh_option] [-P port] [-S program]
+           [[user@]host1:]file1 ... [[user@]host2:]file2
+$ ls
+examples.desktop  linta.txt  l.txt  me.txt  ok.text  tell  test  you.txt
+$ ls -l
+total 20
+-rw-r--r-- 1 cs17d32 cs17d 8980 Apr 20  2016 examples.desktop
+-rw-r--r-- 1 cs17d32 cs17d    0 Apr  1 09:28 linta.txt
+-rw-r--r-- 1 cs17d32 cs17d    0 Mar 28 11:57 l.txt
+-rw-r--r-- 1 cs17d32 cs17d    0 Mar 28 11:39 me.txt
+-rw-r--r-- 1 cs17d32 cs17d    0 Mar 28 11:51 ok.text
+drwxr-xr-x 2 cs17d32 cs17d 4096 Mar 28 10:30 tell
+drwxr-xr-x 2 cs17d32 cs17d 4096 Mar 28 10:15 test
+-rw-r--r-- 1 cs17d32 cs17d    0 Mar 28 11:30 you.txt
+$ rsync -zvh cs17d32@192.168.0.30
+building file list ... 
+rsync: link_stat "/home/cs17d32/cs17d32@192.168.0.30" failed: No such file or directory (2)
+done
+
+sent 16 bytes  received 12 bytes  56.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+$ exit
+Connection to 192.168.0.30 closed.
+

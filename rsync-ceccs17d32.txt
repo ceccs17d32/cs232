@@ -1,0 +1,28 @@
+Script started on Monday 01 April 2019 10:37:52 PM IST
+]0;cec-lab1@ceclab1-Veriton-Series: ~[01;32mcec-lab1@ceclab1-Veriton-Series[00m:[01;34m~[00m$ rsync -zvh cs17d32@192.168.0.30
+building file list ... 
+rsync: link_stat "/home/cec-lab1/cs17d32@192.168.0.30" failed: No such file or directory (2)
+done
+
+sent 16 bytes  received 12 bytes  56.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+]0;cec-lab1@ceclab1-Veriton-Series: ~[01;32mcec-lab1@ceclab1-Veriton-Series[00m:[01;34m~[00m$ rsync -zvh cs17d32@192.168.0.30:/home/cs17d32 /linta.txt/home/cec/
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d32@192.168.0.30's password: 
+receiving file list ... 
+rsync: change_dir "/home/cs17d32/linta.txt/home/cec" failed: Not a directory (20)
+done
+
+sent 8 bytes  received 93 bytes  2.49 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1655) [Receiver=3.1.1]
+rsync: [Receiver] write error: Broken pipe (32)
+]0;cec-lab1@ceclab1-Veriton-Series: ~[01;32mcec-lab1@ceclab1-Veriton-Series[00m:[01;34m~[00m$ exit
+exit
+
+Script done on Monday 01 April 2019 10:44:36 PM IST
