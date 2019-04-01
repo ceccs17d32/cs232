@@ -1,0 +1,69 @@
+Script started on Monday 01 April 2019 11:29:13 PM IST
+]0;cec-lab1@ceclab1-Veriton-Series: ~[01;32mcec-lab1@ceclab1-Veriton-Series[00m:[01;34m~[00m$ ifconfig
+enp0s25   Link encap:Ethernet  HWaddr 10:78:d2:e0:a8:00  
+          inet addr:192.168.0.252  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::3cc4:90af:62f0:a528/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:110683 errors:0 dropped:25 overruns:0 frame:0
+          TX packets:14613 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:21848643 (21.8 MB)  TX bytes:2216144 (2.2 MB)
+          Interrupt:20 Memory:fbbc0000-fbbe0000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:32674 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:32674 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:2499440 (2.4 MB)  TX bytes:2499440 (2.4 MB)
+
+]0;cec-lab1@ceclab1-Veriton-Series: ~[01;32mcec-lab1@ceclab1-Veriton-Series[00m:[01;34m~[00m$ ifconfig eth0
+eth0: error fetching interface information: Device not found
+]0;cec-lab1@ceclab1-Veriton-Series: ~[01;32mcec-lab1@ceclab1-Veriton-Series[00m:[01;34m~[00m$ ifconfig etho[KO
+ethO: error fetching interface information: Device not found
+]0;cec-lab1@ceclab1-Veriton-Series: ~[01;32mcec-lab1@ceclab1-Veriton-Series[00m:[01;34m~[00m$ ifconfig etho
+etho: error fetching interface information: Device not found
+]0;cec-lab1@ceclab1-Veriton-Series: ~[01;32mcec-lab1@ceclab1-Veriton-Series[00m:[01;34m~[00m$ ifconfig
+enp0s25   Link encap:Ethernet  HWaddr 10:78:d2:e0:a8:00  
+          inet addr:192.168.0.252  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::3cc4:90af:62f0:a528/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:118820 errors:0 dropped:26 overruns:0 frame:0
+          TX packets:14706 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:22507390 (22.5 MB)  TX bytes:2239179 (2.2 MB)
+          Interrupt:20 Memory:fbbc0000-fbbe0000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:34658 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:34658 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:2649840 (2.6 MB)  TX bytes:2649840 (2.6 MB)
+
+]0;cec-lab1@ceclab1-Veriton-Series: ~[01;32mcec-lab1@ceclab1-Veriton-Series[00m:[01;34m~[00m$ c[Kclear
+[3;J[H[2J]0;cec-lab1@ceclab1-Veriton-Series: ~[01;32mcec-lab1@ceclab1-Veriton-Series[00m:[01;34m~[00m$ ifconfig
+enp0s25   Link encap:Ethernet  HWaddr 10:78:d2:e0:a8:00  
+          inet addr:192.168.0.252  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::3cc4:90af:62f0:a528/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:119233 errors:0 dropped:26 overruns:0 frame:0
+          TX packets:14709 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:22539806 (22.5 MB)  TX bytes:2239405 (2.2 MB)
+          Interrupt:20 Memory:fbbc0000-fbbe0000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:34818 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:34818 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:2661680 (2.6 MB)  TX bytes:2661680 (2.6 MB)
+
+]0;cec-lab1@ceclab1-Veriton-Series: ~[01;32mcec-lab1@ceclab1-Veriton-Series[00m:[01;34m~[00m$ ifconfig eth0s2
