@@ -1,0 +1,45 @@
+ clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower:~$ script perltask.txt
+Script started, file is perltask.txt
+clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower:~$ sudo apt install perl
+[sudo] password for clab1: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+perl is already the newest version (5.22.1-9ubuntu0.6).
+0 upgraded, 0 newly installed, 0 to remove and 463 not upgraded.
+clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower:~$ perl -v
+
+This is perl 5, version 22, subversion 1 (v5.22.1) built for x86_64-linux-gnu-thread-multi
+(with 73 registered patches, see perl -V for more detail)
+
+Copyright 1987-2015, Larry Wall
+
+Perl may be copied only under the terms of either the Artistic License or the
+GNU General Public License, which may be found in the Perl 5 source kit.
+
+Complete documentation for Perl, including FAQ lists, should be found on
+this system using "man perl" or "perldoc perl".  If you have access to the
+Internet, point your browser at http://www.perl.org/, the Perl Home Page.
+
+clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower:~$ perl add.pl
+Enter two numbers 
+5
+3
+Sum = 8
+clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower:~$ perl hello.pl
+hello 
+clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower:~$ exit
+exit
+Script done, file is perltask.txt
+use strict;
+use warnings;
+
+print "hello \n";
+use strict;
+use warnings;
+
+print "Enter two numbers \n";
+$a = <>;
+$b = <>;
+my $sum = $a+$b;
+print "Sum = $sum\n";
